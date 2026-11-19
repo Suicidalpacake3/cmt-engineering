@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | CMT Engineering</title>
+  <meta name="description" content="Contact CMT Engineering. Head Office: 75 Sable Avenue, Moregloed, Pretoria, South Africa. Botswana: Plot 2469, Botseja, Maun. Call +27 82 409 4836 or email rudolph@cmtengineering.co.za.">
+  <link rel="canonical" href="https://cmtengineering.co.za/contact-us/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CMT Engineering">
+  <meta property="og:title" content="Contact Us | CMT Engineering">
+  <meta property="og:description" content="If You Have Any Questions Feel Free to Get in Touch With Our Team.">
+  <meta property="og:image" content="https://cmtengineering.co.za/assets/img/site/hero-sunset-plant.jpg">
+  <meta name="theme-color" content="#0f1030">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,300..800&amp;family=IBM+Plex+Mono:wght@500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="contact" data-root="../">
+
+<main id="main">
+
+  <section class="page-hero">
+    <img src="../assets/img/site/hero-sunset-plant.jpg" alt="">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><i data-icon="crumb"></i><span>Contact Us</span></nav>
+      <span class="eyebrow light">Get in Touch</span>
+      <h1>Contact Us</h1>
+      <p class="lead">If You Have Any Questions Feel Free to Get in Touch With Our Team.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:clamp(60px,7vw,90px)">
+    <div class="container">
+
+      <div class="contact-strip reveal">
+        <div><small>Call Us</small><a class="big" href="tel:+27824094836">+27 82 409 4836</a><span>Rudolph</span></div>
+        <div><small>Email Us</small><a class="big" href="mailto:rudolph@cmtengineering.co.za">rudolph@cmtengineering.co.za</a><span>We reply during office hours</span></div>
+        <div><small>Opening hours</small><b>Mon to Fri</b><span>7:30am to 4:30pm</span></div>
+        <div><small>WhatsApp</small><a class="big" href="https://api.whatsapp.com/send?phone=27646809585" target="_blank" rel="noopener">+27 64 680 9585</a><span>Send us a message</span></div>
+      </div>
+
+      <div class="section-head" style="margin-bottom:40px">
+        <div>
+          <span class="eyebrow reveal">Locations</span>
+          <h2 class="reveal">Head Office &amp; Botswana</h2>
+        </div>
+        <p class="lead reveal">75 Sable Avenue, Moregloed, Pretoria, South Africa, and Plot 2469, Botseja, Maun, Botswana. Switch between the offices to see each one on the map.</p>
+      </div>
+      <div class="offices reveal" data-offices></div>
+    </div>
+  </section>
+
+  <section class="section section-white" id="message">
+    <div class="container form-wrap">
+      <div class="form-aside">
+        <span class="eyebrow reveal">Have some questions?</span>
+        <h2 class="reveal">Send Us a Message</h2>
+        <p class="lead reveal">Tell us about your project or question and our team will get back to you.</p>
+        <div class="aside-note reveal">
+          Prefer to talk? Call Rudolph on <a href="tel:+27824094836">+27 82 409 4836</a> or email <a href="mailto:rudolph@cmtengineering.co.za">rudolph@cmtengineering.co.za</a>.
+        </div>
+      </div>
+
+      <form class="form-card reveal d1" id="contactForm" action="../send.php" method="post" novalidate>
+        <div class="f-grid">
+          <div class="f-field">
+            <label for="f-name">Your Name <i>*</i></label>
+            <input class="f-input" id="f-name" name="your_name" type="text" autocomplete="name" required maxlength="120">
+            <span class="f-err">Please enter your name.</span>
+          </div>
+          <div class="f-field">
+            <label for="f-email">Your Email <i>*</i></label>
+            <input class="f-input" id="f-email" name="your_email" type="email" autocomplete="email" required maxlength="160">
+            <span class="f-err">Please enter a valid email address.</span>
+          </div>
+          <div class="f-field">
+            <label for="f-phone">Your Phone <i>*</i></label>
+            <input class="f-input" id="f-phone" name="your_phone" type="tel" autocomplete="tel" required maxlength="40">
+            <span class="f-err">Please enter a phone number we can reach you on.</span>
+          </div>
+          <div class="f-field">
+            <span class="f-label" id="f-office-l">Office</span>
+            <div class="dd">
+              <input type="hidden" name="office" value="Head Office (Pretoria)">
+              <button class="dd-btn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="f-office-l"><span class="dd-val">Head Office (Pretoria)</span><i data-icon="chevron"></i></button>
+              <ul class="dd-list" role="listbox" aria-labelledby="f-office-l">
+                <li role="option" aria-selected="true" data-value="Head Office (Pretoria)" data-label="Head Office (Pretoria)">Head Office <small>Pretoria, South Africa</small></li>
+                <li role="option" aria-selected="false" data-value="Botswana (Maun)" data-label="Botswana (Maun)">Botswana <small>Maun, Botswana</small></li>
+              </ul>
+            </div>
+          </div>
+          <div class="f-field full">
+            <label for="f-msg">Message <i>*</i></label>
+            <textarea class="f-input" id="f-msg" name="message" required maxlength="5000"></textarea>
+            <span class="f-err">Please enter your message.</span>
+          </div>
+          <div class="f-hp" aria-hidden="true"><label for="f-web">Leave this field empty</label><input id="f-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <input type="hidden" name="ts" value="">
+        </div>
+        <div class="f-foot">
+          <p>Fields marked * are required. Your details are only used to reply to your message.</p>
+          <button class="btn btn-primary" type="submit">Send Message <i data-icon="arrow"></i></button>
+        </div>
+        <div class="f-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<script src="../assets/js/site.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="../assets/js/offices.js"></script>
+<script>
+(function () {
+  'use strict';
+  const form = document.getElementById('contactForm');
+  const status = form.querySelector('.f-status');
+  const btn = form.querySelector('button[type=submit]');
+  form.ts.value = Date.now();
+  const emailOk = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+  const checks = {
+    your_name: (v) => v.trim().length > 1,
+    your_email: (v) => emailOk(v.trim()),
+    your_phone: (v) => v.replace(/[^\d]/g, '').length >= 7,
+    message: (v) => v.trim().length > 2
+  };
+  const validate = (name) => {
+    const el = form.elements[name]; const ok = checks[name](el.value);
+    el.closest('.f-field').classList.toggle('invalid', !ok); el.setAttribute('aria-invalid', !ok); return ok;
+  };
+  Object.keys(checks).forEach((n) => {
+    form.elements[n].addEventListener('blur', () => { if (form.elements[n].value) validate(n); });
+    form.elements[n].addEventListener('input', () => { if (form.elements[n].closest('.f-field').classList.contains('invalid')) validate(n); });
+  });
+  // Choosing an office on the map also sets the form
+  document.addEventListener('click', (e) => {
+    const t = e.target.closest('.office-tab'); if (!t) return;
+    const opts = form.querySelectorAll('.dd-list li'); const opt = opts[+t.dataset.i]; if (!opt) return;
+    opts.forEach((o) => o.setAttribute('aria-selected', o === opt));
+    form.elements.office.value = opt.dataset.value;
+    form.querySelector('.dd-val').textContent = opt.dataset.label;
+  });
+  const mailto = () => {
+    const f = form.elements;
+    const body = 'Name: ' + f.your_name.value + '\nEmail: ' + f.your_email.value + '\nPhone: ' + f.your_phone.value + '\nOffice: ' + f.office.value + '\n\n' + f.message.value;
+    return 'mailto:rudolph@cmtengineering.co.za?subject=' + encodeURIComponent('Website enquiry from ' + f.your_name.value) + '&body=' + encodeURIComponent(body);
+  };
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    status.className = 'f-status'; status.textContent = '';
+    const bad = Object.keys(checks).filter((n) => !validate(n));
+    if (bad.length) { form.elements[bad[0]].focus(); return; }
+    btn.disabled = true; btn.firstChild.textContent = 'Sending ';
+    try {
+      const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.ok) throw new Error(data.error || 'send failed');
+      status.className = 'f-status ok';
+      status.textContent = 'Thank you for your message. It has been sent.';
+      form.reset(); form.ts.value = Date.now();
+    } catch (err) {
+      status.className = 'f-status err';
+      status.innerHTML = 'There was an error trying to send your message. Please try again later, or <a href="' + mailto() + '">send it from your email app</a> instead.';
+    } finally {
+      btn.disabled = false; btn.firstChild.textContent = 'Send Message ';
+    }
+  });
+})();
+</script>
+</body>
+</html>
