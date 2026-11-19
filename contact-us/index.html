@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
   <title>Contact Us | CMT Engineering</title>
   <meta name="description" content="Contact CMT Engineering. Head Office: 75 Sable Avenue, Moregloed, Pretoria, South Africa. Botswana: Plot 2469, Botseja, Maun. Call +27 82 409 4836 or email rudolph@cmtengineering.co.za.">
   <link rel="canonical" href="https://cmtengineering.co.za/contact-us/">
@@ -156,6 +157,11 @@
     status.className = 'f-status'; status.textContent = '';
     const bad = Object.keys(checks).filter((n) => !validate(n));
     if (bad.length) { form.elements[bad[0]].focus(); return; }
+    if (location.hostname.endsWith('github.io')) {
+      status.className = 'f-status ok';
+      status.textContent = 'This is a preview of the new website, so messages are not sent from here. On the live site this form goes straight to Rudolph.';
+      return;
+    }
     btn.disabled = true; btn.firstChild.textContent = 'Sending ';
     try {
       const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
